@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup & Login page</title>
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="form sign_up" id="sign_up">
+          <h1>Register</h1>
+          <form>
+            <div class="form_inputs">
+              <label><span>*</span>First Name</label>
+              <input type="text" placeholder="Enter Your First Name" required />
+            </div>
+            <div class="form_inputs">
+              <label><span>*</span>Last Name</label>
+              <input type="text" placeholder="Enter Your Last Name" required />
+            </div>
+            <div class="form_inputs">
+              <label><span>*</span>Email Address</label>
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                required
+              />
+            </div>
+
+            <div class="form_inputs">
+              <label><span>*</span>Password</label>
+              <input
+                type="password"
+                placeholder="Enter Your Password"
+                required
+              />
+            </div>
+            <div class="form_inputs">
+              <label><span>*</span>Confirm Password</label>
+              <input
+                type="password"
+                placeholder="Confirm Your Password"
+                required
+              />
+            </div>
+            <div class="form_check">
+              <label
+                ><input type="checkbox" required /> I agreed to the terms and
+                conditions</label
+              >
+            </div>
+            <input class="submit" type="submit" />
+            <p>Already have an account? <a class="login_btn">Login here</a></p>
+          </form>
+        </div>
+        <div class="form login" id="login">
+          <h1>Login</h1>
+          <form>
+            <div class="form_inputs">
+              <label><span>*</span>Email Address</label>
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                required
+              />
+            </div>
+            <div class="form_inputs">
+              <label><span>*</span>Password</label>
+              <input
+                type="password"
+                placeholder="Enter Your Password"
+                required
+              />
+            </div>
+
+            <div class="form_check">
+              <label><input type="checkbox" required /> Remember me</label>
+              <a href="#">Forgotten password?</a>
+            </div>
+            <input class="submit" type="submit" />
+            <p>
+              Don't have an account? <a class="signup_btn">Register here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./Script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+@font-face {
+  font-family: african;
+  src: url(./font/african.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: african;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./images/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 1.5rem 1rem;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.form {
+  width: 100%;
+}
+.login {
+  display: none;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+.form_inputs {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form_inputs label {
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  color: #000;
+}
+.form_inputs label span {
+  color: red;
+  margin-right: 2px;
+}
+.form_inputs input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+.form_check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+input[type="checkbox"] {
+  accent-color: #000;
+  border: 0;
+  outline: 0;
+}
+input[type="submit"] {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: 0;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+  background-color: transparent;
+  border: 2px solid #000;
+}
+p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+p a {
+  font-weight: 700;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .wrapper {
+    width: 300px;
+  }
+}
